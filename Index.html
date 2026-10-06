@@ -76,7 +76,6 @@ a { color: goldenrod; }
   color: white;
 }
 
-/* Grid keeps every card the same width, so nothing overlaps */
 .row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -125,22 +124,26 @@ a { color: goldenrod; }
   line-height: 1.5;
 }
 
-.info { min-height: 0; }
+.locations { min-height: 0; padding: 10px 20px; }
 
-iframe {
-  display: block;
-  width: 100%;
-  height: 250px;
-  border: 4px solid goldenrod;
+.locations ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.maplink { display: inline-block; margin-top: 10px; font-weight: bold; }
+.locations li {
+  padding: 12px 0;
+  border-bottom: 2px solid goldenrod;
+}
+
+.locations li:last-child { border-bottom: none; }
 
 figure { margin: 0; }
 figcaption { margin: 0; }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 40, 0.45), rgba(0, 0, 40, 0.45)), url("pics/header.png");
+  background-image: linear-gradient(rgba(0, 0, 40, 0.45), rgba(0, 0, 40, 0.45)), url("https://adamsoneduph-my.sharepoint.com/:i:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQDQdZqhDTQpSZq_cP0PlMFTARJB9kxHOHvBpxlnYpI4opE?e=vSxZ4U");
   background-size: cover;
   background-position: center;
   border-bottom: none;
@@ -174,7 +177,6 @@ footer h2 { margin-top: 0; }
   .button { padding: 8px 18px; }
   .panel { padding: 15px; margin: 15px; }
   .card { padding: 15px; }
-  iframe { height: 220px; }
 }
 </style>
 </head>
@@ -196,28 +198,24 @@ footer h2 { margin-top: 0; }
   <section class="panel" style="background-color: navy; color: white;" id="spots">
     <div class="row">
       <figure class="card" style="background-color: navy;">
-        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:i:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQD_cm9DVe-UT5zR_GBTIORKAWo2LJ2uMk4BIUH9ivElxew?e=SmTyuX" alt="White Island, Camiguin"></div>
+        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:i:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQBZBa-DK3CVTZMgXi2-BgV4AXnpWPAFBaGuc1poSCHmTs8?e=B5YcBR" alt="White Island, Camiguin"></div>
         <figcaption class="text" style="background-color: navy; color: white;">White Island</figcaption>
       </figure>
       <figure class="card" style="background-color: navy;">
-        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:i:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQBZBa-DK3CVTZMgXi2-BgV4AXnpWPAFBaGuc1poSCHmTs8?e=WfLDTb" alt="Sumaguing Cave, Sagada"></div>
+        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:i:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQDQdZqhDTQpSZq_cP0PlMFTARJB9kxHOHvBpxlnYpI4opE?e=vSxZ4U" alt="Sumaguing Cave, Sagada"></div>
         <figcaption class="text" style="background-color: navy; color: white;">Sumaguing Cave</figcaption>
       </figure>
       <figure class="card" style="background-color: navy;">
-        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:u:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQAVy28_o6adT61jdaoGC2eqASGjqfwjA7z8vwMOka6FLV4?e=Y1SLpk" alt="Kawasan Falls, Cebu"></div>
+        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:u:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQAVy28_o6adT61jdaoGC2eqASGjqfwjA7z8vwMOka6FLV4?e=NXv7qS" alt="Kawasan Falls, Cebu"></div>
         <figcaption class="text" style="background-color: navy; color: white;">Kawasan Falls</figcaption>
       </figure>
       <figure class="card" style="background-color: navy;">
-        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:i:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQCtiPiERigsSL8OsLPmMh_OASQz9ENRIIUTRwkmPzGB9x4?e=k86KQq" alt="Mount Pulag, Benguet"></div>
+        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:u:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQAVy28_o6adT61jdaoGC2eqASGjqfwjA7z8vwMOka6FLV4?e=NXv7qS" alt="Mount Pulag, Benguet"></div>
         <figcaption class="text" style="background-color: navy; color: white;">Mount Pulag</figcaption>
       </figure>
       <figure class="card" style="background-color: navy;">
-        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:i:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQDQdZqhDTQpSZq_cP0PlMFTARJB9kxHOHvBpxlnYpI4opE?e=t4xAmd" alt="Kayangan Lake, Coron"></div>
+        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:i:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQD_cm9DVe-UT5zR_GBTIORKAWo2LJ2uMk4BIUH9ivElxew?e=fHam2a" alt="Kayangan Lake, Coron"></div>
         <figcaption class="text" style="background-color: navy; color: white;">Kayangan Lake</figcaption>
-      </figure>
-      <figure class="card" style="background-color: navy;">
-        <div class="box"><img src="pics/image6.png" alt="Chocolate Hills, Bohol"></div>
-        <figcaption class="text" style="background-color: navy; color: white;">Chocolate Hills</figcaption>
       </figure>
     </div>
   </section>
@@ -228,107 +226,62 @@ footer h2 { margin-top: 0; }
     <div class="row">
       <article class="card" style="background-color: navy;">
         <h3 class="text" style="background-color: navy; color: white;">White Island, Camiguin</h3>
-        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:i:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQD_cm9DVe-UT5zR_GBTIORKAWo2LJ2uMk4BIUH9ivElxew?e=SmTyuX" alt="White Island, Camiguin"></div>
+        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:i:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQBZBa-DK3CVTZMgXi2-BgV4AXnpWPAFBaGuc1poSCHmTs8?e=B5YcBR" alt="White Island, Camiguin"></div>
         <p class="textexplain" style="background-color: navy; color: white;">A crescent-shaped sandbar of fine white sand floating off the coast of Camiguin. Clear turquoise water surrounds it, while the green, cloud-capped mountains of the island rise in the distance.</p>
       </article>
       <article class="card" style="background-color: navy;">
         <h3 class="text" style="background-color: navy; color: white;">Sumaguing Cave, Sagada</h3>
-        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:i:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQBZBa-DK3CVTZMgXi2-BgV4AXnpWPAFBaGuc1poSCHmTs8?e=WfLDTb" alt="Sumaguing Cave, Sagada"></div>
+        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:i:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQDQdZqhDTQpSZq_cP0PlMFTARJB9kxHOHvBpxlnYpI4opE?e=vSxZ4U" alt="Sumaguing Cave, Sagada"></div>
         <p class="textexplain" style="background-color: navy; color: white;">Also known as the Big Cave, Sumaguing is filled with warm, golden-orange limestone formations that hang like flowing curtains. Shallow pools of cool water gather on the cave floor.</p>
       </article>
       <article class="card" style="background-color: navy;">
         <h3 class="text" style="background-color: navy; color: white;">Kawasan Falls, Cebu</h3>
-        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:u:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQAVy28_o6adT61jdaoGC2eqASGjqfwjA7z8vwMOka6FLV4?e=Y1SLpk" alt="Kawasan Falls, Cebu"></div>
+        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:u:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQAVy28_o6adT61jdaoGC2eqASGjqfwjA7z8vwMOka6FLV4?e=NXv7qS" alt="Kawasan Falls, Cebu"></div>
         <p class="textexplain" style="background-color: navy; color: white;">Found in Badian, Cebu, Kawasan Falls spills down tiers of rock into a bright turquoise pool, framed by thick, lush green rainforest.</p>
       </article>
       <article class="card" style="background-color: navy;">
         <h3 class="text" style="background-color: navy; color: white;">Mount Pulag, Benguet</h3>
-        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:i:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQCtiPiERigsSL8OsLPmMh_OASQz9ENRIIUTRwkmPzGB9x4?e=k86KQq" alt="Mount Pulag, Benguet"></div>
+        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:u:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQAVy28_o6adT61jdaoGC2eqASGjqfwjA7z8vwMOka6FLV4?e=NXv7qS" alt="Mount Pulag, Benguet"></div>
         <p class="textexplain" style="background-color: navy; color: white;">Seen through pine branches, the Cordillera mountains of Benguet unfold in green ridges, terraced slopes and deep valleys under a blue sky full of white clouds.</p>
       </article>
       <article class="card" style="background-color: navy;">
         <h3 class="text" style="background-color: navy; color: white;">Kayangan Lake, Coron</h3>
-        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:i:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQDQdZqhDTQpSZq_cP0PlMFTARJB9kxHOHvBpxlnYpI4opE?e=t4xAmd" alt="Kayangan Lake, Coron"></div>
+        <div class="box"><img src="https://adamsoneduph-my.sharepoint.com/:i:/g/personal/kyan_asher_arevalo_adamson_edu_ph/IQD_cm9DVe-UT5zR_GBTIORKAWo2LJ2uMk4BIUH9ivElxew?e=fHam2a" alt="Kayangan Lake, Coron"></div>
         <p class="textexplain" style="background-color: navy; color: white;">In Coron, Palawan, steep limestone cliffs covered in greenery surround the clear blue-green water of Kayangan Lake. A wooden walkway and boats line the shore.</p>
-      </article>
-      <article class="card" style="background-color: navy;">
-        <h3 class="text" style="background-color: navy; color: white;">Chocolate Hills, Bohol</h3>
-        <div class="box"><img src="pics/image6.png" alt="Chocolate Hills, Bohol"></div>
-        <p class="textexplain" style="background-color: navy; color: white;">In Carmen, Bohol, hundreds of cone-shaped, grass-covered hills roll across the land. In the dry season the grass turns brown, which gives the hills their name.</p>
       </article>
     </div>
   </section>
 
   <section class="panel" style="background-color: navy; color: white;" id="map">
     <h2>Contact and Map Location</h2>
-    <div class="row">
-
-      <article class="card" style="background-color: navy;">
-        <h3 class="text" style="background-color: navy; color: white;">White Island, Camiguin</h3>
-        <iframe src="https://www.google.com/maps?q=White+Island,+Camiguin&amp;output=embed" title="Map of White Island, Camiguin" loading="lazy" allowfullscreen></iframe>
-        <div class="textexplain info" style="background-color: navy; color: white;">
-          <b>Location:</b> Off the coast of Mambajao, Camiguin<br>
-          <b>Contact:</b> Mambajao Municipal Tourism Office<br>
-          <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=White+Island+Camiguin" target="_blank" rel="noopener">View on Google Maps</a><br>
-          <a class="maplink" href="https://www.google.com/search?q=Mambajao+Camiguin+Municipal+Tourism+Office+contact" target="_blank" rel="noopener">Find contact details</a>
-        </div>
-      </article>
-
-      <article class="card" style="background-color: navy;">
-        <h3 class="text" style="background-color: navy; color: white;">Sumaguing Cave, Sagada</h3>
-        <iframe src="https://www.google.com/maps?q=Sumaguing+Cave,+Sagada,+Mountain+Province&amp;output=embed" title="Map of Sumaguing Cave, Sagada" loading="lazy" allowfullscreen></iframe>
-        <div class="textexplain info" style="background-color: navy; color: white;">
-          <b>Location:</b> Sagada, Mountain Province<br>
-          <b>Contact:</b> Sagada Tourist Information Center<br>
-          <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Sumaguing+Cave+Sagada" target="_blank" rel="noopener">View on Google Maps</a><br>
-          <a class="maplink" href="https://www.google.com/search?q=Sagada+Tourist+Information+Center+contact" target="_blank" rel="noopener">Find contact details</a>
-        </div>
-      </article>
-
-      <article class="card" style="background-color: navy;">
-        <h3 class="text" style="background-color: navy; color: white;">Kawasan Falls, Cebu</h3>
-        <iframe src="https://www.google.com/maps?q=Kawasan+Falls,+Badian,+Cebu&amp;output=embed" title="Map of Kawasan Falls, Cebu" loading="lazy" allowfullscreen></iframe>
-        <div class="textexplain info" style="background-color: navy; color: white;">
-          <b>Location:</b> Badian, Cebu<br>
-          <b>Contact:</b> Badian Municipal Tourism Office<br>
-          <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Kawasan+Falls+Badian+Cebu" target="_blank" rel="noopener">View on Google Maps</a><br>
-          <a class="maplink" href="https://www.google.com/search?q=Badian+Cebu+Municipal+Tourism+Office+contact" target="_blank" rel="noopener">Find contact details</a>
-        </div>
-      </article>
-
-      <article class="card" style="background-color: navy;">
-        <h3 class="text" style="background-color: navy; color: white;">Mount Pulag, Benguet</h3>
-        <iframe src="https://www.google.com/maps?q=Mount+Pulag,+Benguet&amp;output=embed" title="Map of Mount Pulag, Benguet" loading="lazy" allowfullscreen></iframe>
-        <div class="textexplain info" style="background-color: navy; color: white;">
-          <b>Location:</b> Kabayan, Benguet<br>
-          <b>Contact:</b> DENR Mt. Pulag Protected Area Office / Kabayan Tourism Office<br>
-          <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Mount+Pulag+Benguet" target="_blank" rel="noopener">View on Google Maps</a><br>
-          <a class="maplink" href="https://www.google.com/search?q=Mt+Pulag+Protected+Area+Office+Kabayan+Tourism+contact" target="_blank" rel="noopener">Find contact details</a>
-        </div>
-      </article>
-
-      <article class="card" style="background-color: navy;">
-        <h3 class="text" style="background-color: navy; color: white;">Kayangan Lake, Coron</h3>
-        <iframe src="https://www.google.com/maps?q=Kayangan+Lake,+Coron,+Palawan&amp;output=embed" title="Map of Kayangan Lake, Coron" loading="lazy" allowfullscreen></iframe>
-        <div class="textexplain info" style="background-color: navy; color: white;">
-          <b>Location:</b> Coron, Palawan<br>
-          <b>Contact:</b> Coron Municipal Tourism Office<br>
-          <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Kayangan+Lake+Coron+Palawan" target="_blank" rel="noopener">View on Google Maps</a><br>
-          <a class="maplink" href="https://www.google.com/search?q=Coron+Palawan+Municipal+Tourism+Office+contact" target="_blank" rel="noopener">Find contact details</a>
-        </div>
-      </article>
-
-      <article class="card" style="background-color: navy;">
-        <h3 class="text" style="background-color: navy; color: white;">Chocolate Hills, Bohol</h3>
-        <iframe src="https://www.google.com/maps?q=Chocolate+Hills,+Carmen,+Bohol&amp;output=embed" title="Map of Chocolate Hills, Bohol" loading="lazy" allowfullscreen></iframe>
-        <div class="textexplain info" style="background-color: navy; color: white;">
-          <b>Location:</b> Carmen, Bohol<br>
-          <b>Contact:</b> Carmen Municipal Tourism Office<br>
-          <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Chocolate+Hills+Carmen+Bohol" target="_blank" rel="noopener">View on Google Maps</a><br>
-          <a class="maplink" href="https://www.google.com/search?q=Carmen+Bohol+Municipal+Tourism+Office+contact" target="_blank" rel="noopener">Find contact details</a>
-        </div>
-      </article>
-
+    <div class="textexplain locations" style="background-color: navy; color: white;">
+      <ul>
+        <li>
+          <b>White Island, Camiguin</b><br>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=White+Island+Camiguin" target="_blank" rel="noopener">View on Google Maps</a> |
+          <a href="https://www.google.com/search?q=Mambajao+Camiguin+Municipal+Tourism+Office+contact" target="_blank" rel="noopener">Find contact details</a>
+        </li>
+        <li>
+          <b>Sumaguing Cave, Sagada</b><br>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Sumaguing+Cave+Sagada" target="_blank" rel="noopener">View on Google Maps</a> |
+          <a href="https://www.google.com/search?q=Sagada+Tourist+Information+Center+contact" target="_blank" rel="noopener">Find contact details</a>
+        </li>
+        <li>
+          <b>Kawasan Falls, Cebu</b><br>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Kawasan+Falls+Badian+Cebu" target="_blank" rel="noopener">View on Google Maps</a> |
+          <a href="https://www.google.com/search?q=Badian+Cebu+Municipal+Tourism+Office+contact" target="_blank" rel="noopener">Find contact details</a>
+        </li>
+        <li>
+          <b>Mount Pulag, Benguet</b><br>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Mount+Pulag+Benguet" target="_blank" rel="noopener">View on Google Maps</a> |
+          <a href="https://www.google.com/search?q=Mt+Pulag+Protected+Area+Office+Kabayan+Tourism+contact" target="_blank" rel="noopener">Find contact details</a>
+        </li>
+        <li>
+          <b>Kayangan Lake, Coron</b><br>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Kayangan+Lake+Coron+Palawan" target="_blank" rel="noopener">View on Google Maps</a> |
+          <a href="https://www.google.com/search?q=Coron+Palawan+Municipal+Tourism+Office+contact" target="_blank" rel="noopener">Find contact details</a>
+        </li>
+      </ul>
     </div>
   </section>
 
